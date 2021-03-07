@@ -1,0 +1,11 @@
+{
+    "name": "node-base",
+    "dockerFile": "Dockerfile",
+    "appPort": 7000,
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "2gua.rainbow-brackets",
+        "esbenp.prettier-vscode"
+    ],
+    "postCreateCommand": "npm install"
+}
