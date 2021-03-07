@@ -2,7 +2,10 @@
   "name": "node_base",
   "version": "0.0.1",
   "description": "",
-  "dependencies": {},
+  "dependencies": {
+    "fp-ts": "^2.9.5",
+    "monocle-ts": "^2.3.7"
+  },
   "scripts": {
     "start": "concurrently --kill-others --names \"tsc,node\" -c \"blue,green\" \"yarn run type-check:watch\"  \"yarn nodemon --verbose --exec babel-node --extensions \".js,.ts\" src/app.ts\"",
     "start-test": "concurrently --kill-others --names \"tsc,node\" -c \"blue,green\" \"yarn run type-check:watch\"  \"yarn run test:watch\"",
